@@ -1,26 +1,50 @@
-# Logs
-logs
+# Node/React/Vite
+node_modules/
+dist/
+build/
+.temp/
+.cache/
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-.vs/
-!.vscode/extensions.json
-.idea
+# Mac/Windows
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Vite/CRA/Secrets
 .env
+.env.local
+.env.production
+.env.development
+
+# VSCode/IDE
+.vscode/
+.idea/
+.vs/
+*.suo
+*.vsscc
+*.user
+*.swp
+
+# Visual Studio build/debug (C#/WPF/WCF etc)
+obj/
+bin/
+*.dll
+*.exe
+
+# Yarn/PNPM
+.yarn/
+.pnp/
+.yarnrc*
+
+# Test/coverage
+coverage/
+
+# OS/Metadata/trash
+*.orig
+webpack-db/
+
+# Misc
+*.log
+.projects/
+*.csproj.user
