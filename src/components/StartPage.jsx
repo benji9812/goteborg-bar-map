@@ -5,72 +5,54 @@ function StartPage({ onStart }) {
         <div style={{
             width: '100vw',
             height: '100vh',
-            background: 'linear-gradient(128deg, #232526 20%, #332526 90%)',
+            background: 'url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1567&q=80") center center / cover no-repeat',
             display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            flexDirection: 'column',
-            fontFamily: '"Montserrat", "Segoe UI", Arial, sans-serif',
+            fontFamily: "'Creepster', cursive",
+            position: 'fixed',
+            zIndex: 0
         }}>
-            <div style={{
-                background: 'rgba(25,28,36,0.80)',
-                borderRadius: '24px',
-                padding: '48px 36px',
-                boxShadow: '0 7px 32px 0 rgba(0,0,0,0.30)'
+            <h1 style={{
+                fontFamily: "'Creepster', cursive",
+                color: '#FFD700',
+                fontSize: '4rem',
+                textShadow: '0 0 25px #fff, 0 0 48px #f7bb36, 0 0 75px #d96c06'
             }}>
-                <h1 style={{
-                    color: '#F7BB36',
-                    textTransform: 'uppercase',
-                    fontSize: '3rem',
-                    fontFamily: '"Orbitron", "Montserrat", Arial, sans-serif',
-                    letterSpacing: '0.05em',
-                    marginBottom: '18px',
-                    textShadow: '0 2px 8px #222'
-                }}>
-                    Göteborgs Ölkarta
-                </h1>
-                <p style={{
+                Göteborgs Ölkarta
+            </h1>
+            <p style={{
+                fontFamily: "'Creepster', cursive",
+                color: '#FFD700',
+                fontSize: '2rem',
+                marginBottom: '36px',
+                textShadow: '0 0 11px #f7bb36, 0 0 25px #880c2a'
+            }}>
+                Hitta de mörkaste pubarna, barerna och restaurangerna... Om du vågar!
+            </p>
+            <button
+                onClick={onStart}
+                style={{
+                    fontFamily: "'Creepster', cursive",
+                    fontSize: '1.25rem',
+                    background: 'linear-gradient(90deg, #ffcc00 80%, #763c24 100%)',
                     color: '#fff',
-                    fontSize: '1.3rem',
-                    marginBottom: '36px',
-                    textAlign: 'center'
+                    boxShadow: '0 0 18px #ffb04b, 0 0 42px #fa506d',
+                    textShadow: '0 0 8px #fff700',
+                    borderRadius: '10px',
+                    border: 'none',
+                    padding: '13px 33px',
+                    marginTop: '22px',
+                    fontWeight: 700,
+                    letterSpacing: '0.09em',
+                    cursor: 'pointer'
                 }}>
-                    Hitta, jämför och upptäck barer, pubar och restauranger med ölpris & stämning.<br />
-                    <span style={{ fontSize: '2.1em' }}>🍺🍻🍴</span>
-                </p>
-                <button
-                    onClick={onStart}
-                    style={{
-                        padding: '12px 36px',
-                        fontSize: '1.1rem',
-                        fontFamily: '"Montserrat", Arial, sans-serif',
-                        background: 'linear-gradient(90deg, #f7bb36 80%, #d96c06 100%)',
-                        color: '#222',
-                        border: 'none',
-                        borderRadius: '8px',
-                        fontWeight: 700,
-                        cursor: 'pointer',
-                        boxShadow: '0 1px 10px #f7bb3690',
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.04em'
-                    }}>
-                    Gå till kartan
-                </button>
-            </div>
-            <div style={{
-                position: 'absolute',
-                bottom: '24px',
-                width: '100%',
-                textAlign: 'center',
-                color: '#bbb',
-                fontSize: '0.9rem',
-                opacity: 0.8,
-                letterSpacing: '0.04em'
-            }}>
-                © {new Date().getFullYear()} Göteborgs Ölkarta | Data: OSM & Manuellt | Design: YOU
-            </div>
+                Gå till kartan 👻
+            </button>
         </div>
     );
 }
 
 export default StartPage;
+
