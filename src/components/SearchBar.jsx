@@ -13,7 +13,7 @@ function SearchBar({ onSearch, onTypeFilter }) {
                 border: '2px solid rgba(255,255,255,0.12)',
                 color: '#fff',
                 padding: '32px 28px',
-                fontFamily: '"Montserrat", Arial, sans-serif',
+                fontFamily: "'Creepster', cursive",
                 marginBottom: '18px'
             }}
         >
@@ -33,7 +33,7 @@ function SearchBar({ onSearch, onTypeFilter }) {
                         fontWeight: 700,
                         color: '#fff',
                         letterSpacing: '0.02em',
-                        fontFamily: '"Orbitron", "Montserrat", Arial, sans-serif'
+                        fontFamily: "'Creepster', cursive"
                     }}>
                         Hitta ditt ölställe
                     </h3>
@@ -142,9 +142,17 @@ function SearchBar({ onSearch, onTypeFilter }) {
                             e.currentTarget.style.background = 'rgba(44,8,19,0.43)';
                             e.currentTarget.style.boxShadow = '0 2px 18px #f7bb3666';
                         }}>
-                        <input id="filter-bar" name="type" type="radio" value="bar" onChange={e => onTypeFilter(e.target.value)} style={{ marginRight: '10px' }} />
+
+                        <input id="filter-bar"
+                            name="type"
+                            type="radio"
+                            value="bar"
+                            onChange={e => onTypeFilter(e.target.value)}
+                            style={{ marginRight: '10px' }} />
+
                         <span style={{ fontSize: '18px', marginRight: '8px' }}>🍺</span>
                         <span style={{ fontWeight: 500 }}>Endast barer</span>
+
                     </label>
 
                     <label htmlFor="filter-pub" style={{
